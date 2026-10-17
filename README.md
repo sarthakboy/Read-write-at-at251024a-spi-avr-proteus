@@ -4,12 +4,6 @@
   <strong>Learning SPI communication by reading, writing, and erasing Flash memory!</strong>
 </p>
 
-<p align="center">
-  ![AVR](https://img.shields.io/badge/Microcontroller-AVR-orange?style=for-the-badge)
-  ![Embedded C](https://img.shields.io/badge/Language-Embedded%20C-blue?style=for-the-badge)
-  ![SPI](https://img.shields.io/badge/Protocol-SPI-purple?style=for-the-badge)
-  ![Proteus](https://img.shields.io/badge/Simulation-Proteus-green?style=for-the-badge)
-</p>
 
 ## 📌 About the Project
 
@@ -19,27 +13,8 @@ I built functions to write data to Flash memory, read it back, erase a sector, a
 
 The most exciting part was understanding how a microcontroller sends commands and address bytes to a memory chip through SPI and receives data in return.
 
-## 🎥 Project Demo
-
-### Proteus Circuit Diagram
-
-Add a screenshot of your Proteus circuit here.
-
-<p align="center">
-  <img src="images/proteus-circuit.png" alt="AT25F1024 SPI Flash Memory circuit in Proteus" width="850"/>
-</p>
-
 ### Simulation Video
-
-Add a GIF of your simulation or link to your demonstration video.
-
-<p align="center">
-  <img src="images/spi-flash-demo.gif" alt="SPI Flash Memory read and write demonstration" width="850"/>
-</p>
-
-▶ **Watch the full demo:** [Add your video link here](YOUR_VIDEO_LINK)
-
-> Replace the image filenames and video link with your actual files. If you only have a screenshot, you can remove the video section until your recording is ready.
+▶ **Watch the full demo:** https://drive.google.com/file/d/11O64dRb0t3HLXai_5yY_cMEQ0o1kfDES/view?usp=drive_link
 
 ## ✨ Features
 
@@ -65,8 +40,6 @@ Add a GIF of your simulation or link to your demonstration video.
 
 **Clock frequency:** 16 MHz (`F_CPU = 16000000UL`)
 
-> Add the exact AVR microcontroller model and the Flash chip's datasheet link to make the project easier to reproduce.
-
 ## 🔌 How the Buttons Work
 
 | Button | Operation |
@@ -75,8 +48,6 @@ Add a GIF of your simulation or link to your demonstration video.
 | K2 | Read data from address `0x00000` and display it |
 | K3 | Erase the sector containing address `0x00000` |
 | K4 | Read and display the Flash identification bytes |
-
-**Note:** The firmware uses active-low button inputs with internal pull-ups.
 
 ## 🧠 How SPI Flash Communication Works
 
@@ -129,17 +100,6 @@ This project helped me understand:
 - **Busy polling:** Waiting for the Flash memory operation to complete before continuing.
 
 One of my favourite parts was learning to use macros for hardware actions, including button-state checks. It helped me see how small reusable pieces of code can make embedded programs easier to understand.
-
-## 📂 Project Structure
-
-```text
-AT25F1024-SPI-Flash/
-├── AT25F1024 SPI Flash Memory.c
-├── README.md
-└── images/
-    ├── proteus-circuit.png
-    └── spi-flash-demo.gif
-```
 
 ## 🚀 How to Run
 
